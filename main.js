@@ -154,9 +154,25 @@ function initFormHandling() {
         }
       }
       
+      // Checkbox validation
+      const checkbox = contactForm.querySelector('input[type="checkbox"]');
+      if (checkbox && !checkbox.checked) {
+        isValid = false;
+        const checkboxContainer = checkbox.closest('.checkbox-container') || checkbox.parentElement;
+        checkboxContainer.style.color = 'hsl(var(--destructive))';
+        setTimeout(() => {
+          checkboxContainer.style.color = '';
+        }, 3000);
+      }
+      
       if (!isValid) {
         e.preventDefault();
-        showMessage('Bitte füllen Sie alle Pflichtfelder korrekt aus.', 'error');
+        const checkbox = contactForm.querySelector('input[type="checkbox"]');
+        if (checkbox && !checkbox.checked) {
+          showMessage('Bitte bestätigen Sie die Datenschutzerklärung.', 'error');
+        } else {
+          showMessage('Bitte füllen Sie alle Pflichtfelder korrekt aus.', 'error');
+        }
       } else {
         // Show loading state
         const submitBtn = contactForm.querySelector('button[type="submit"]');
