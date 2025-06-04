@@ -168,7 +168,7 @@ function initFormHandling() {
       if (!isValid) {
         e.preventDefault();
         const checkbox = contactForm.querySelector('input[type="checkbox"]');
-        if (checkbox && !checkbox.checked) {
+        if (!checkbox.checked) {
           showMessage('Bitte bestätigen Sie die Datenschutzerklärung.', 'error');
         } else {
           showMessage('Bitte füllen Sie alle Pflichtfelder korrekt aus.', 'error');
