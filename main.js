@@ -128,24 +128,28 @@ function initScrollAnimations() {
 // Form validation and submission feedback
 function initFormHandling() {
   const contactForm = document.querySelector('.contact-form');
-  
+
   if (contactForm) {
-    contactForm.addEventListener('submit', function(e) {
-      // Basic validation
-      const requiredFields = contactForm.querySelectorAll('[required]');
+    contactForm.addEventListener('submit', function (e) {
+      const requiredFields = contactForm.querySelectorAll('[required]:not([type="checkbox"])');
+      const checkbox = contactForm.querySelector('input[type="checkbox"]');
+      const emailField = contactForm.querySelector('input[type="email"]');
       let isValid = true;
-      
+
+      // Reset borders
+      requiredFields.forEach(field => {
+        field.style.borderColor = 'hsl(var(--border))';
+      });
+
+      // Validate text inputs
       requiredFields.forEach(field => {
         if (!field.value.trim()) {
           isValid = false;
           field.style.borderColor = 'hsl(var(--destructive))';
-        } else {
-          field.style.borderColor = 'hsl(var(--border))';
         }
       });
-      
+
       // Email validation
-      const emailField = contactForm.querySelector('input[type="email"]');
       if (emailField && emailField.value) {
         const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
         if (!emailRegex.test(emailField.value)) {
@@ -153,9 +157,8 @@ function initFormHandling() {
           emailField.style.borderColor = 'hsl(var(--destructive))';
         }
       }
-      
+
       // Checkbox validation
-      const checkbox = contactForm.querySelector('input[type="checkbox"]');
       if (checkbox && !checkbox.checked) {
         isValid = false;
         const checkboxContainer = checkbox.closest('.checkbox-container') || checkbox.parentElement;
@@ -164,10 +167,10 @@ function initFormHandling() {
           checkboxContainer.style.color = '';
         }, 3000);
       }
-      
+
+      // Prevent if not valid
       if (!isValid) {
         e.preventDefault();
-        const checkbox = contactForm.querySelector('input[type="checkbox"]');
         if (!checkbox.checked) {
           showMessage('Bitte bestätigen Sie die Datenschutzerklärung.', 'error');
         } else {
@@ -179,9 +182,8 @@ function initFormHandling() {
         const originalText = submitBtn.textContent;
         submitBtn.textContent = 'Wird gesendet...';
         submitBtn.disabled = true;
-        
-        // Note: Formspree will handle the actual submission
-        // This timeout simulates the submission process
+
+        // Re-enable after 2s (optional, falls Formspree nicht redirectet)
         setTimeout(() => {
           submitBtn.textContent = originalText;
           submitBtn.disabled = false;
