@@ -1,0 +1,90 @@
+Erstelle eine moderne und ansprechende Webseite für "TiuS Alltagshelden", einen Dienstleister für Alltagshilfe für Senioren und Menschen mit körperlichen Beeinträchtigungen in Hannover und Umgebung. Die Website soll die gleichen Inhalte und Funktionen wie die Original-Website (https://www.alltagsheldentius.de/) haben, aber mit einem deutlich moderneren Design und verbesserter Benutzerfreundlichkeit.
+
+## Technologie-Stack:
+- Frontend: Next.js oder React für ein modernes, schnelles User Interface
+- Styling: Tailwind CSS für responsive Design und moderne Ästhetik
+- Backend (für Kontaktformular): Express.js
+- SEO-Optimierung: Meta-Tags, semantisches HTML, Strukturierte Daten
+
+## Webseitenstruktur:
+1. Startseite (Home)
+2. Das sind wir (Über uns mit Team-Vorstellung)
+3. Neuigkeiten (Blog/News-Bereich)
+4. Unser Leistungsumfang (Services)
+5. Kontakt (mit funktionierendem Kontaktformular)
+
+## Design-Anforderungen:
+- Responsive Design (Mobile-First-Ansatz)
+- Modernes, sauberes Layout mit angemessenem Whitespace
+- Barrierefreiheit nach WCAG-Richtlinien
+- Schnelle Ladezeiten
+- Verbesserte Typografie mit guter Lesbarkeit (besonders wichtig für ältere Zielgruppe)
+- Farbschema: Weiterentwicklung des bestehenden Blau-Weiß-Schemas mit modernen Akzentfarben
+- Sanfte Animationen und Übergänge für bessere User Experience
+- Hochwertige Icons und visuelle Elemente
+
+## Spezifische Funktionen:
+1. **Header:**
+   - Logo
+   - Responsive Navigation mit Hamburger-Menü auf mobilen Geräten
+   - Call-to-Action Button (z.B. "Kontakt aufnehmen")
+
+2. **Startseite:**
+   - Hero-Bereich mit aussagekräftigem Bild und Slogan
+   - Kurze Einführung in die Dienstleistungen
+   - Vorstellung des Konzepts
+   - Call-to-Action Buttons zu wichtigen Unterseiten
+
+3. **Das sind wir:**
+   - Vorstellung von Sarah und Timor Qureshi mit optimierten Bildern
+   - Persönliche Geschichten und beruflicher Werdegang
+   - Werte und Philosophie des Unternehmens
+
+4. **Neuigkeiten:**
+   - Blog-ähnlicher Bereich für aktuelle Informationen
+   - Stellenangebote
+   - Informationen zur Abrechnung über Krankenkassen
+   - Möglichkeit, neue Beiträge einfach hinzuzufügen
+
+5. **Unser Leistungsumfang:**
+   - Übersichtliche Darstellung der angebotenen Dienste in Kategorien:
+     * Unterstützung bei der Haushaltsführung
+     * Persönliche Betreuung
+     * Begleitung und Unterstützung im Alltag
+     * Sicherheitsanruf-Service
+   - Icons für jede Dienstleistung
+   - Detaillierte Beschreibungen
+   - FAQ-Bereich
+
+6. **Kontaktseite:**
+   - Modernes, benutzerfreundliches Kontaktformular
+   - Karteneinbindung mit Standort
+   - Alle Kontaktdaten (Telefon, E-Mail, Adresse)
+   - Öffnungszeiten
+   - Social Media Links (falls vorhanden)
+
+7. **Footer:**
+   - Kontaktinformationen
+   - Links zu allen wichtigen Seiten
+   - Impressum und Datenschutzerklärung
+   - Copyright-Hinweis
+
+## SEO-Optimierung:
+- Meta-Tags für alle Seiten
+- Sitemap für Suchmaschinen
+- Strukturierte Daten für lokales Geschäft
+- Alt-Tags für alle Bilder
+
+## Kontaktformular-Funktionalität:
+- Name, E-Mail, Telefonnummer und Nachricht als Pflichtfelder
+- Datenschutzhinweis und Zustimmungs-Checkbox
+- Erfolgs- und Fehlermeldungen
+- Spam-Schutz
+- E-Mail-Weiterleitung an die Geschäftsadresse
+
+## Zusätzliche moderne Funktionen:
+- Cookie-Consent-Banner
+- Dunkelmodus-Option
+- Testimonial-/Bewertungsbereich
+- Möglichkeit zur Online-Terminvereinbarung
+- FAQ-Sektion mit Accordion-Style
