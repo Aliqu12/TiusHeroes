@@ -1,0 +1,755 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <title>TiuS Alltagshelden - Alltagshilfe für Senioren in Hannover</title>
+    <meta name="description" content="Professionelle Alltagshilfe für Senioren und Menschen mit Beeinträchtigungen in Hannover. Haushaltsführung, Betreuung und Begleitung von TiuS Alltagshelden.">
+    <meta name="keywords" content="Alltagshilfe, Senioren, Hannover, Haushaltsführung, Betreuung, Pflegehilfe">
+    
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="TiuS Alltagshelden - Alltagshilfe für Senioren in Hannover">
+    <meta property="og:description" content="Professionelle Alltagshilfe für Senioren und Menschen mit Beeinträchtigungen in Hannover. Mit Herz und Erfahrung stehen wir Ihnen zur Seite.">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="de_DE">
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "TiuS Alltagshelden",
+      "description": "Professionelle Alltagshilfe für Senioren und Menschen mit Beeinträchtigungen",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Lammstraße 2",
+        "addressLocality": "Hannover",
+        "postalCode": "30161",
+        "addressCountry": "DE"
+      },
+      "telephone": "+49-511-219-59-161",
+      "email": "tius-alltagshelden@web.de",
+      "openingHours": [
+        "Mo-Fr 08:00-18:00",
+        "Sa 09:00-14:00"
+      ],
+      "serviceArea": {
+        "@type": "City",
+        "name": "Hannover"
+      }
+    }
+    </script>
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <span class="logo-text">TiuS Alltagshelden</span>
+                </div>
+                <nav class="nav">
+                    <ul class="nav-list">
+                        <li><a href="#home" class="nav-link">Home</a></li>
+                        <li><a href="#about" class="nav-link">Über uns</a></li>
+                        <li><a href="#services" class="nav-link">Leistungen</a></li>
+                        <li><a href="#news" class="nav-link">Neuigkeiten</a></li>
+                        <li><a href="#contact" class="nav-link">Kontakt</a></li>
+                    </ul>
+                </nav>
+                <button class="mobile-menu-btn" aria-label="Menü öffnen">
+                    <svg class="menu-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="3" y1="6" x2="21" y2="6"></line>
+                        <line x1="3" y1="12" x2="21" y2="12"></line>
+                        <line x1="3" y1="18" x2="21" y2="18"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+        <nav class="mobile-nav">
+            <ul class="mobile-nav-list">
+                <li><a href="#home" class="mobile-nav-link">Home</a></li>
+                <li><a href="#about" class="mobile-nav-link">Über uns</a></li>
+                <li><a href="#services" class="mobile-nav-link">Leistungen</a></li>
+                <li><a href="#news" class="mobile-nav-link">Neuigkeiten</a></li>
+                <li><a href="#contact" class="mobile-nav-link">Kontakt</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="hero-overlay"></div>
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <h1 class="hero-title">
+                            Ihre vertrauensvollen
+                            <span class="text-accent"> Alltagshelden</span>
+                            <br>in Hannover
+                        </h1>
+                        <p class="hero-subtitle">
+                            Professionelle Unterstützung für Senioren und Menschen mit Beeinträchtigungen. 
+                            Wir helfen Ihnen dabei, Ihren Alltag selbstbestimmt und würdevoll zu gestalten.
+                        </p>
+                    </div>
+                    
+                    <div class="hero-buttons">
+                        <button class="btn btn-primary" onclick="scrollToSection('services')">
+                            Unsere Leistungen
+                        </button>
+                        <button class="btn btn-secondary" onclick="scrollToSection('contact')">
+                            Beratung vereinbaren
+                        </button>
+                    </div>
+
+                    <!-- Trust Indicators -->
+                    <div class="trust-indicators">
+                        <div class="trust-item">
+                            <div class="trust-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                                </svg>
+                            </div>
+                            <div class="trust-text">
+                                <div class="trust-title">Versichert & zertifiziert</div>
+                                <div class="trust-subtitle">Alle Qualifikationen geprüft</div>
+                            </div>
+                        </div>
+                        <div class="trust-item">
+                            <div class="trust-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <circle cx="12" cy="12" r="10"></circle>
+                                    <polyline points="12,6 12,12 16,14"></polyline>
+                                </svg>
+                            </div>
+                            <div class="trust-text">
+                                <div class="trust-title">Sicherheitsanruf-Service</div>
+                                <div class="trust-subtitle">Ihr Wohlbefinden zählt</div>
+                            </div>
+                        </div>
+                        <div class="trust-item">
+                            <div class="trust-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                                </svg>
+                            </div>
+                            <div class="trust-text">
+                                <div class="trust-title">Mit Herz & Erfahrung</div>
+                                <div class="trust-subtitle">15+ Jahre Betreuung</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Introduction Section -->
+        <section class="intro-section">
+            <div class="container">
+                <div class="intro-content">
+                    <h2 class="section-title">Ihr Partner für einen selbstbestimmten Alltag</h2>
+                    <p class="intro-text">
+                        Bei TiuS Alltagshelden verstehen wir, dass jeder Mensch das Recht auf ein würdevolles und selbstbestimmtes Leben hat. 
+                        Unsere erfahrenen Mitarbeiter unterstützen Sie dabei, Ihren Alltag nach Ihren Wünschen zu gestalten – 
+                        sei es bei der Haushaltsführung, persönlichen Betreuung oder bei Terminen und Besorgungen.
+                    </p>
+                    
+                    <div class="features-grid">
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                                    <circle cx="9" cy="7" r="4"></circle>
+                                    <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                                    <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                                </svg>
+                            </div>
+                            <h3 class="feature-title">Erfahrenes Team</h3>
+                            <p class="feature-text">Qualifizierte Mitarbeiter mit Herz und langjähriger Erfahrung in der Betreuung</p>
+                        </div>
+                        
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                                    <path d="M2 21l2-6 6-2"></path>
+                                </svg>
+                            </div>
+                            <h3 class="feature-title">Individuelle Betreuung</h3>
+                            <p class="feature-text">Maßgeschneiderte Lösungen, die sich an Ihren persönlichen Bedürfnissen orientieren</p>
+                        </div>
+                        
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <circle cx="12" cy="12" r="10"></circle>
+                                    <polyline points="12,6 12,12 16,14"></polyline>
+                                </svg>
+                            </div>
+                            <h3 class="feature-title">Zuverlässige Hilfe</h3>
+                            <p class="feature-text">Pünktlich, verlässlich und immer mit einem offenen Ohr für Ihre Anliegen</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Das sind wir</h2>
+                    <p class="section-subtitle">
+                        Lernen Sie das Gründerpaar von TiuS Alltagshelden kennen. Mit Herz, Erfahrung und Leidenschaft 
+                        für die Betreuung stehen Sarah und Timor Qureshi für Qualität und Vertrauen.
+                    </p>
+                </div>
+
+                <div class="team-grid">
+                    <!-- Sarah Qureshi -->
+                    <div class="team-card">
+                        <div class="team-image">
+                            <img src="https://images.unsplash.com/photo-1582750433449-648ed127bb54?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=320" 
+                                 alt="Sarah Qureshi - Gründerin und Geschäftsführerin">
+                        </div>
+                        <div class="team-content">
+                            <h3 class="team-name">Sarah Qureshi</h3>
+                            <p class="team-role">Gründerin & Geschäftsführerin</p>
+                            <p class="team-description">
+                                Als examinierte Altenpflegerin und Pflegedienstleitung bringe ich über 15 Jahre Erfahrung 
+                                in der Betreuung und Pflege mit. Meine Leidenschaft gilt der würdevollen Begleitung von 
+                                Menschen in allen Lebensphasen. Bei TiuS Alltagshelden setze ich auf persönliche Beziehungen 
+                                und individuelle Betreuungskonzepte.
+                            </p>
+                            <div class="team-qualifications">
+                                <div class="qualification">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                                        <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+                                    </svg>
+                                    <span>Examinierte Altenpflegerin</span>
+                                </div>
+                                <div class="qualification">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <circle cx="12" cy="8" r="7"></circle>
+                                        <polyline points="8.21,13.89 7,23 12,20 17,23 15.79,13.88"></polyline>
+                                    </svg>
+                                    <span>Pflegedienstleitung</span>
+                                </div>
+                                <div class="qualification">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"></polygon>
+                                    </svg>
+                                    <span>15+ Jahre Erfahrung</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Timor Qureshi -->
+                    <div class="team-card">
+                        <div class="team-image">
+                            <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=320" 
+                                 alt="Timour Qureshi - Mitgründer und Betriebsleiter">
+                        </div>
+                        <div class="team-content">
+                            <h3 class="team-name">Timor Qureshi</h3>
+                            <p class="team-role">Mitgründer & Betriebsleiter</p>
+                            <p class="team-description">
+                                Mit meinem Hintergrund im Gesundheitswesen und der Betriebswirtschaft sorge ich dafür, 
+                                dass unsere Dienstleistungen höchsten Qualitätsstandards entsprechen. Mein Fokus liegt 
+                                auf der kontinuierlichen Weiterentwicklung unserer Services und der Zufriedenheit 
+                                unserer Kunden und Mitarbeiter.
+                            </p>
+                            <div class="team-qualifications">
+                                <div class="qualification">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <polyline points="23,6 13.5,15.5 8.5,10.5 1,18"></polyline>
+                                        <polyline points="17,6 23,6 23,12"></polyline>
+                                    </svg>
+                                    <span>Betriebswirtschaft</span>
+                                </div>
+                                <div class="qualification">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <circle cx="12" cy="12" r="3"></circle>
+                                        <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path>
+                                    </svg>
+                                    <span>Qualitätsmanagement</span>
+                                </div>
+                                <div class="qualification">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M2 21l2-6 6-2"></path>
+                                        <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                                    </svg>
+                                    <span>Kundenbetreuung</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Company Values -->
+                <div class="values-section">
+                    <h3 class="values-title">Unsere Werte und Philosophie</h3>
+                    <div class="values-grid">
+                        <div class="value-item">
+                            <div class="value-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                                </svg>
+                            </div>
+                            <h4 class="value-title">Menschlichkeit</h4>
+                            <p class="value-text">Jeder Mensch verdient Respekt, Würde und individuelle Betreuung nach seinen Bedürfnissen.</p>
+                        </div>
+                        
+                        <div class="value-item">
+                            <div class="value-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                                </svg>
+                            </div>
+                            <h4 class="value-title">Vertrauen</h4>
+                            <p class="value-text">Durch Transparenz, Zuverlässigkeit und offene Kommunikation bauen wir langfristige Beziehungen auf.</p>
+                        </div>
+                        
+                        <div class="value-item">
+                            <div class="value-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <circle cx="12" cy="8" r="7"></circle>
+                                    <polyline points="8.21,13.89 7,23 12,20 17,23 15.79,13.88"></polyline>
+                                </svg>
+                            </div>
+                            <h4 class="value-title">Qualität</h4>
+                            <p class="value-text">Kontinuierliche Weiterbildung und hohe Standards sichern die bestmögliche Betreuungsqualität.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- News Section -->
+        <section id="news" class="news-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Neuigkeiten</h2>
+                    <p class="section-subtitle">
+                        Bleiben Sie über aktuelle Entwicklungen, Stellenangebote und wichtige Informationen 
+                        rund um unsere Dienstleistungen informiert.
+                    </p>
+                </div>
+
+                <div class="news-grid">
+                    <!-- Featured News Article -->
+                    <div class="news-featured">
+                        <div class="news-badge">Aktuell</div>
+                        <h3 class="news-title">
+                            Kostenübernahme durch Krankenkassen - Ihre Vorteile
+                        </h3>
+                        <p class="news-content">
+                            Viele unserer Leistungen können über die Krankenkasse oder Pflegekasse abgerechnet werden. 
+                            Seit dem 05. Februar 2021 sind wir ein zertifizierter Anbieter für hauswirtschaftliche Versorgungs- und Betreuungsleistungen. Dadurch sind wir bei sämtlichen Krankenkassen gelistet und berechtigen zur Abrechnung der monatlichen Entlastungsleistungen in Höhe von 125 €.
+                        </p>
+                    </div>
+
+                    <!-- Sidebar News -->
+                    <div class="news-sidebar">
+                        <!-- Job Opening -->
+                        <div class="news-item">
+                            <div class="news-badge news-badge-green">Stellenausschreibung</div>
+                            <h4 class="news-item-title">
+                                Pflegefachkraft (m/w/d) gesucht
+                            </h4>
+                            <p class="news-item-content">
+                                Verstärken Sie unser Team! Wir suchen eine erfahrene Pflegefachkraft für unsere Alltagsbetreuung in Hannover.
+                            </p>
+                            <a href="mailto:tius-alltagshelden@web.de" class="news-link">
+                                Jetzt bewerben →
+                            </a>
+                        </div>
+
+                        <!-- Important Notice -->
+                        <div class="news-item news-item-notice">
+                            <div class="news-notice-header">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"></path>
+                                    <line x1="12" y1="9" x2="12" y2="13"></line>
+                                    <line x1="12" y1="17" x2="12.01" y2="17"></line>
+                                </svg>
+                                <span>Wichtiger Hinweis</span>
+                            </div>
+                            <h4 class="news-item-title">
+                                Ferienzeiten 2024
+                            </h4>
+                            <p class="news-item-content">
+                                Unsere Bürozeiten während der Feiertage.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="services-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Unser Leistungsumfang</h2>
+                    <p class="section-subtitle">
+                        Wir bieten Ihnen ein umfassendes Spektrum an Dienstleistungen, die darauf ausgerichtet sind, 
+                        Ihren Alltag zu erleichtern und Ihre Lebensqualität zu verbessern.
+                    </p>
+                </div>
+
+                <div class="services-grid">
+                    <!-- Haushaltsführung -->
+                    <div class="service-card">
+                        <div class="service-header">
+                            <div class="service-icon service-icon-blue">
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                                    <polyline points="9,22 9,12 15,12 15,22"></polyline>
+                                </svg>
+                            </div>
+                            <h3 class="service-title">Haushaltsführung</h3>
+                        </div>
+                        <p class="service-description">
+                            Wir übernehmen alle Aufgaben rund um Ihren Haushalt, damit Sie mehr Zeit für die schönen Dinge des Lebens haben.
+                        </p>
+                        <ul class="service-list">
+                            <li>Reinigung und Pflege der Wohnung</li>
+                            <li>Wäsche waschen und bügeln</li>
+                            <li>Einkaufen und Besorgungen</li>
+                            <li>Mahlzeiten zubereiten</li>
+                            <li>Gartenpflege</li>
+                        </ul>
+                    </div>
+
+                    <!-- Betreuung und Begleitung -->
+                    <div class="service-card">
+                        <div class="service-header">
+                            <div class="service-icon service-icon-green">
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                                    <circle cx="9" cy="7" r="4"></circle>
+                                    <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                                    <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                                </svg>
+                            </div>
+                            <h3 class="service-title">Betreuung und Begleitung</h3>
+                        </div>
+                        <p class="service-description">
+                            Menschliche Nähe und professionelle Betreuung für mehr Lebensqualität und soziale Teilhabe.
+                        </p>
+                        <ul class="service-list">
+                            <li>Gesellschaft und Gespräche</li>
+                            <li>Begleitung zu Ärzten und Terminen</li>
+                            <li>Freizeitgestaltung</li>
+                            <li>Unterstützung bei Behördengängen</li>
+                            <li>Medikamentenerinnerung</li>
+                        </ul>
+                    </div>
+
+                    <!-- Pflegerische Tätigkeiten -->
+                    <div class="service-card">
+                        <div class="service-header">
+                            <div class="service-icon service-icon-purple">
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                                    <circle cx="8.5" cy="7" r="4"></circle>
+                                    <line x1="20" y1="8" x2="20" y2="14"></line>
+                                    <line x1="23" y1="11" x2="17" y2="11"></line>
+                                </svg>
+                            </div>
+                            <h3 class="service-title">Pflegerische Tätigkeiten</h3>
+                        </div>
+                        <p class="service-description">
+                            Fachkundige Unterstützung bei der Körperpflege und gesundheitlichen Betreuung durch qualifiziertes Personal.
+                        </p>
+                        <ul class="service-list">
+                            <li>Hilfe bei der Körperpflege</li>
+                            <li>An- und Auskleiden</li>
+                            <li>Mobilisation und Bewegung</li>
+                            <li>Grundpflege</li>
+                            <li>Prophylaxemaßnahmen</li>
+                        </ul>
+                    </div>
+
+                    <!-- Sicherheitsanruf-Service -->
+                    <div class="service-card">
+                        <div class="service-header">
+                            <div class="service-icon service-icon-orange">
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                                </svg>
+                            </div>
+                            <h3 class="service-title">Sicherheitsanruf-Service</h3>
+                        </div>
+                        <p class="service-description">
+                            Regelmäßige Kontaktaufnahme für Ihre Sicherheit und unser aller Beruhigung.
+                        </p>
+                        <ul class="service-list">
+                            <li>Tägliche Sicherheitsanrufe</li>
+                            <li>Wohlbefinden-Checks</li>
+                            <li>Notfallkontakt</li>
+                            <li>Terminvereinbarungen</li>
+                            <li>24/7 Bereitschaft</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- FAQ Section -->
+                <div class="faq-section">
+                    <h3 class="faq-title">Häufig gestellte Fragen</h3>
+                    <div class="faq-container">
+                        <div class="faq-item">
+                            <button class="faq-question" onclick="toggleFAQ(this)">
+                                <span>Wie werden die Kosten für Ihre Dienstleistungen abgerechnet?</span>
+                                <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="6,9 12,15 18,9"></polyline>
+                                </svg>
+                            </button>
+                            <div class="faq-answer">
+                                <p>Viele unserer Leistungen können über die Kranken- oder Pflegekasse abgerechnet werden. Seit Februar 2021 sind wir zertifizierter Anbieter und bei allen Krankenkassen gelistet. Sie können monatliche Entlastungsleistungen in Höhe von 125€ in Anspruch nehmen. Gerne beraten wir Sie individuell zu den Finanzierungsmöglichkeiten.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <button class="faq-question" onclick="toggleFAQ(this)">
+                                <span>Welche Qualifikationen haben Ihre Mitarbeiter?</span>
+                                <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="6,9 12,15 18,9"></polyline>
+                                </svg>
+                            </button>
+                            <div class="faq-answer">
+                                <p>Unser Team besteht aus examinierten Altenpflegern, Pflegehelfern und qualifizierten Betreuungskräften. Alle Mitarbeiter verfügen über entsprechende Zertifikate und nehmen regelmäßig an Fortbildungen teil. Unsere Geschäftsführerin Sarah Qureshi ist examinierte Altenpflegerin und Pflegedienstleitung mit über 15 Jahren Erfahrung.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <button class="faq-question" onclick="toggleFAQ(this)">
+                                <span>In welchen Bereichen von Hannover sind Sie tätig?</span>
+                                <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="6,9 12,15 18,9"></polyline>
+                                </svg>
+                            </button>
+                            <div class="faq-answer">
+                                <p>Wir sind in ganz Hannover und den umliegenden Gemeinden tätig. Unser Einsatzgebiet umfasst alle Stadtteile Hannovers sowie angrenzende Bereiche. Bei Fragen zu spezifischen Standorten kontaktieren Sie uns gerne telefonisch.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <button class="faq-question" onclick="toggleFAQ(this)">
+                                <span>Wie kurzfristig können Sie bei Bedarf helfen?</span>
+                                <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="6,9 12,15 18,9"></polyline>
+                                </svg>
+                            </button>
+                            <div class="faq-answer">
+                                <p>Wir verstehen, dass Hilfe oft kurzfristig benötigt wird. In Notfällen und bei dringenden Anfragen bemühen wir uns, innerhalb von 24-48 Stunden eine Lösung zu finden. Für geplante Einsätze empfehlen wir eine Vorlaufzeit von einigen Tagen, um die beste Betreuungskraft für Ihre Bedürfnisse zu finden.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Kontakt</h2>
+                    <p class="section-subtitle">
+                        Nehmen Sie unverbindlich Kontakt mit uns auf. Wir beraten Sie gerne und erstellen Ihnen ein individuelles Angebot.
+                    </p>
+                </div>
+
+                <div class="contact-grid">
+                    <!-- Contact Information -->
+                    <div class="contact-info">
+                        <h3 class="contact-info-title">Kontaktinformationen</h3>
+                        <div class="contact-details">
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                        <circle cx="12" cy="10" r="3"></circle>
+                                    </svg>
+                                </div>
+                                <div class="contact-content">
+                                    <p class="contact-label">Adresse</p>
+                                    <p class="contact-value">
+                                        Lammstraße 2<br>
+                                        30161 Hannover
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                                    </svg>
+                                </div>
+                                <div class="contact-content">
+                                    <p class="contact-label">Telefon</p>
+                                    <div class="contact-phone-list">
+                                        <p class="contact-value">
+                                            <a href="tel:+4951121959161">0511 - 219 59 161</a>
+                                        </p>
+                                        <p class="contact-value">
+                                            <a href="tel:+4917634365164">0176 - 343 651 64</a>
+                                        </p>
+                                        <p class="contact-value">
+                                            Fax: 0511 - 219 59 162
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                        <polyline points="22,6 12,13 2,6"></polyline>
+                                    </svg>
+                                </div>
+                                <div class="contact-content">
+                                    <p class="contact-label">E-Mail</p>
+                                    <p class="contact-value">
+                                        <a href="mailto:tius-alltagshelden@web.de">tius-alltagshelden@web.de</a>
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <circle cx="12" cy="12" r="10"></circle>
+                                        <polyline points="12,6 12,12 16,14"></polyline>
+                                    </svg>
+                                </div>
+                                <div class="contact-content">
+                                    <p class="contact-label">Erreichbarkeit</p>
+                                    <div class="contact-hours">
+                                        <p class="contact-value">Mo-Fr: 08:00-18:00 Uhr</p>
+                                        <p class="contact-value">Sa: 09:00-14:00 Uhr</p>
+                                        <p class="contact-value">So: Nach Vereinbarung</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Contact Form -->
+                    <div class="contact-form-container">
+                        <div class="contact-form-card">
+                            <h3 class="contact-form-title">Nachricht senden</h3>
+                            
+                            <form action="https://formspree.io/f/xyzjyqyw" method="POST" class="contact-form">
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label for="firstName" class="form-label">Vorname *</label>
+                                        <input type="text" id="firstName" name="firstName" required class="form-input">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="lastName" class="form-label">Nachname *</label>
+                                        <input type="text" id="lastName" name="lastName" required class="form-input">
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="email" class="form-label">E-Mail *</label>
+                                    <input type="email" id="email" name="email" required class="form-input">
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="phone" class="form-label">Telefon (optional)</label>
+                                    <input type="tel" id="phone" name="phone" class="form-input">
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="subject" class="form-label">Betreff</label>
+                                    <input type="text" id="subject" name="subject" class="form-input">
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="message" class="form-label">Nachricht *</label>
+                                    <textarea id="message" name="message" rows="6" required class="form-textarea" placeholder="Beschreiben Sie uns Ihren Bedarf..."></textarea>
+                                </div>
+
+                                <div class="form-checkbox">
+                                    <input type="checkbox" id="consent" name="consent" required class="checkbox-input">
+                                    <label for="consent" class="checkbox-label">
+                                        Ich stimme der Verarbeitung meiner Daten gemäß der
+                                        <a href="datenschutz.html" target="_blank" class="privacy-link">Datenschutzerklärung</a>
+                                        zu. *
+                                    </label>
+                                </div>
+
+                                <button type="submit" class="btn btn-primary btn-full">
+                                    Nachricht senden
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-main">
+                    <div class="footer-brand">
+                        <h3 class="footer-title">TiuS Alltagshelden</h3>
+                        <p class="footer-description">
+                            Professionelle Alltagshilfe für Senioren und Menschen mit Beeinträchtigungen in Hannover. 
+                            Mit Herz und Erfahrung stehen wir Ihnen zur Seite.
+                        </p>
+                    </div>
+                    
+                    <div class="footer-contact">
+                        <h4 class="footer-section-title">Kontakt</h4>
+                        <div class="footer-contact-info">
+                            <p>Lammstraße 2, 30161 Hannover</p>
+                            <p><a href="tel:+4951121959161">0511 - 219 59 161</a></p>
+                            <p><a href="mailto:tius-alltagshelden@web.de">tius-alltagshelden@web.de</a></p>
+                        </div>
+                    </div>
+                    
+                    <div class="footer-hours">
+                        <h4 class="footer-section-title">Öffnungszeiten</h4>
+                        <div class="footer-hours-info">
+                            <p>Mo-Fr: 08:00-18:00 Uhr</p>
+                            <p>Sa: 09:00-14:00 Uhr</p>
+                            <p>So: Nach Vereinbarung</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="footer-bottom">
+                    <div class="footer-links">
+                        <a href="datenschutz.html">Datenschutz</a>
+                        <a href="#contact">Kontakt</a>
+                    </div>
+                    <p class="footer-copyright">
+                        © 2024 TiuS Alltagshelden. Alle Rechte vorbehalten.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
